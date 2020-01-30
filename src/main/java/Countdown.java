@@ -31,7 +31,9 @@ class Counter implements Runnable{
 
     @Override
     public void run() {
-        person.personCountsDown(personName);
+        synchronized (person) {
+            person.personCountsDown(personName);
+        }
     }
 
 }
@@ -43,12 +45,12 @@ class Person {
         for(int i = 5; i > 0; i--) {
             System.out.println(i);
             try {
-                Thread.sleep(1000);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        System.out.println("Countdown is over.");
+        System.out.println("Countdown is over.\n");
     }
 
 }
