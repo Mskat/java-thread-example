@@ -45,8 +45,8 @@ class Person {
 
     public void personCountsDown(String name) {
         System.out.println(name + " is starting the countdown...");
-        for(int i = 5; i > 0; i--) {
-            System.out.println(i);
+        for(int number = 5; number > 0; number--) {
+            System.out.println(number);
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {
