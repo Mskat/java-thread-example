@@ -1,1 +1,5 @@
+### Maven ###
 /target
+
+### Java ###
+*.class
