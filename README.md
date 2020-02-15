@@ -1,7 +1,7 @@
 # java-thread-example
 
 ## General info
-This project is a countdown simulation. It was created to learn how Java threads work as a part of writing multi-user chat application.
+This project is a countdown simulation. It was created to learn how Java threads work, as a part of writing multi-user chat application.
 
 ## Technologies
 Java 8+
